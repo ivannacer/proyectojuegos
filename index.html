@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos de otro planeta</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/jparallax.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        .parallax-viewport{
+            width: 1000px;
+            height: 400px;
+            max-width: 1000em;
+            background-color: #800080;
+        
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./imagen/fondo3.png" alt="" width="1400px" height="auto">
+    </div>
+
+    <div>
+        <h1>Juegos de otros planetas </h1>
+    </div>
+
+    <p>
+        Aunque en la actualidad las consolas de sobremesa y las versiones portátiles dominan el mercado, el inicio de la popularidad de los videojuegos tiene su origen en el arcade.
+
+Si bien es cierto que este formato se desarrolló durante los años 70, no fue hasta los ochenta cuando logró consolidarse gracias a que los principales desarrolladores confluyeron en la entrega de títulos de gran calidad, como lo fueron Pac-Man, Double Dragon o Donkey Kong.
+
+Esta década es conocida como la época dorada de los videojuegos y por eso aquí vamos a hablar de algunos de los juegos arcade de los 80 más famosos.
+
+
+    </p>
+    
+    <div style="width: 1000px; margin: auto;">
+        <!-- Inicia vemtana de paralaje  -->
+        <div class="parallax-viewport" id="parallax">
+
+            <!-- Capas de paralaje -->
+            <div class="parallax-layer" style="width: 2256px; height: 461px;">
+                <img src="imagen/fondo.png" style="position: absolute; left: 0px; top: 0px;">
+            </div>
+
+            <div class="parallax-layer" style="width: 50px; height: 50px;">
+                <img src="imagen/lunas2.png" style="position: absolute; left: -300px; top: 0px;">
+            </div>
+
+            <div class="parallax-layer" style="width: 2085px; height: 836px;">
+                <img src="imagen/piso.png" alt=""
+                style="position: absolute; top: px; left: px;">
+            </div>
+
+            <div class="parallax-layer" style="width: 1342px; height: 538px;">
+                <img src="imagen/rocas.png" alt=""
+                style="position: absolute; top: 1px; left: px;">
+            </div>
+
+        </div>  
+    </div>
+
+    <h2>Tenemos varios juegos que puedes probar </h2>
+
+    <form method="get" action="./street.html" align="center">
+
+        <button type="submit">
+        
+            <b>Juega Street Fighter</b><br />
+        
+            solo una prueba
+        
+        </button>
+        
+    </form>
+
+    <form method="get" action="./principe.html" align="center">
+
+        <button type="submit">
+        
+            <b> Juega Prince of Persia</b><br />
+        
+            solo una prueba
+        
+        </button>
+        
+    </form>
+
+    <form method="get" action="./pacman.html" align="center">
+
+        <button type="submit">
+        
+            <b> Juega Pacman</b><br />
+        
+            solo una prueba
+        
+        </button>
+        
+    </form>
+
+    <form method="get" action="./index2.html" align="center">
+
+        <button type="submit">
+        
+            <b> Juega Star Fox</b><br />
+        
+            solo una prueba
+        
+        </button>
+        
+    </form>
+
+    <form method="get" action="./zelda.html" align="center">
+
+        <button type="submit">
+        
+            <b> Juega Legend of Zelda</b><br />
+        
+            solo una prueba
+        
+        </button>
+        
+    </form>
+
+
+    <!-- El javaScript -->
+    <script src="js/jquery1.7.2.js"></script>
+    <script src="js/jquery.event.frame.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('#parallax .parallax-layer')
+            
+            .parallax({
+                mouseport: jQuery('#parallax')
+            });
+        });
+    </script>
+     
+    
+
+    
+    
+</body>
+</html>
